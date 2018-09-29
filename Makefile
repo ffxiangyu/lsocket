@@ -24,6 +24,7 @@ CFLAGS=-Wall -fPIC $(OPT) $(DBG)
 LUA_VERSION=$(shell lua -e "print((string.gsub(_VERSION, '^.+ ', '')))")
 LUA_DIR = /usr/local
 LUA_INCDIR=$(LUA_DIR)/include
+LUA_INCDIR=../skynet/3rd/lua
 INST_LIBDIR=$(LUA_DIR)/lib/lua/$(LUA_VERSION)
 
 ifeq ($(OS),Darwin)
